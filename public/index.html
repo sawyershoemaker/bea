@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bea Control Panel</title>
+    <link id="favicon" rel="icon" type="image/png" href=""/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js" defer></script>
+  </head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bea Control Panel</h1>
+    </header>
+
+    <section class="bot-info">
+      <h2>Bot Info</h2>
+      <p id="botUsername"></p>
+      <img id="botSkin" src="" alt="Bot Skin" class="bot-skin">
+    </section>
+
+    <section class="controls">
+      <h2>Controls</h2>
+      <div class="button-group">
+        <!-- Toggle buttons are green (active) by default -->
+        <button id="toggleChat" class="toggle-button active">Chat</button>
+        <button id="toggleAntiAfk" class="toggle-button active">Anti-AFK</button>
+      </div>
+      <div class="button-group">
+        <button id="viewFullChat" class="action-button">Chat Log</button>
+        <button id="viewConsole" class="action-button">Console Log</button>
+        <button id="stopBot" class="action-button">Stop Bot</button>
+      </div>
+    </section>
+
+    <section class="send-message">
+      <h2>Send Message</h2>
+      <div class="input-group">
+        <input type="text" id="messageInput" placeholder="Type message here">
+        <button id="sendMessage" class="action-button">Send</button>
+      </div>
+    </section>
+
+    <section class="chat-log">
+      <h2>Recent Chat Log</h2>
+      <ul id="chatLog"></ul>
+    </section>
+
+    <section class="bot-responses">
+      <h2>Bot Responses</h2>
+      <ul id="botResponses"></ul>
+    </section>
+
+    <a href="https://github.com/user/sawyershoemaker" target="_blank" class="github-link-top">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="github-icon">
+    </a>
+  </div>
+</body>
+</html>

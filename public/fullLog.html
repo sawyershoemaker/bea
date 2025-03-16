@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chat Log</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="fullLog.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Chat Log</h1>
+      <button id="saveChatLog" class="action-button save-log-button">Save Log</button>
+    </header>
+    <section class="chat-log full">
+      <ul id="fullChatLog"></ul>
+    </section>
+  </div>
+  <div id="notification" class="notification"></div>
+</body>
+</html>
